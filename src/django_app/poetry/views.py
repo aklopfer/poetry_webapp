@@ -1,0 +1,7 @@
+# poetry/views.py
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
+
+def index(request):
+	return HttpResponse('Hello, World!')
+    #return render(request, 'index.html', context=None)
